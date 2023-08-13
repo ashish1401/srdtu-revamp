@@ -1,6 +1,12 @@
+import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
-    <div className='text-4xl'>Home</div>
+    <>
+      <Head>
+        <title>Home - SR DTU</title>
+      </Head>
+      <div>Home</div>
+    </>
   )
 }

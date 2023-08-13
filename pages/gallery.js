@@ -1,7 +1,13 @@
+import Head from 'next/head';
 import styles from '../styles/Gallery.module.css';
 const Gallery = () => {
     return (
-        <div>Gallery</div>
+        <>
+            <Head>
+                <title>Gallery - SR DTU</title>
+            </Head>
+            <div>Gallery</div>
+        </>
     )
 }
 

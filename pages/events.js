@@ -1,8 +1,14 @@
+import Head from 'next/head';
 import styles from '../styles/Events.module.css';
 
 const Events = () => {
     return (
-        <div>events</div>
+        <>
+            <Head>
+                <title>Events - SR DTU</title>
+            </Head>
+            <div>Events</div>
+        </>
     )
 }
 
