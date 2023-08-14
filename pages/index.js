@@ -22,7 +22,7 @@ export default function Home() {
               <p className='text-7xl font-sora mb-4'>SR DTU</p>
               <p className='text-2xl md:text-5xl font-sora whitespace-nowrap'>Join the Bot Revolution</p>
               <div>
-                <button className=' bg-tertiary opacity-20 text-black rounded-3xl p-4 font-sora text-2xl md:text-3xl mt-4 hover:opacity-100 transition-all'>Enroll Now</button>
+                <button className=' bg-tertiary opacity-20 hover:text-secondary rounded-3xl p-4 font-sora text-2xl md:text-3xl mt-4 hover:opacity-100 transition-all'>Enroll Now</button>
               </div>
             </div>
           </div>
