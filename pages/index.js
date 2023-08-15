@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import { motion } from 'framer-motion'
 import AboutCard from '../components/home/AboutCard';
+import Heading from '../components/Heading';
+import EventsCarousel from '../components/home/EventsCarousel';
 export default function Home() {
   return (
     <>
@@ -37,20 +39,34 @@ export default function Home() {
           </div>
         </motion.section >
       </div >
-      <section className='pt-5 bg-black font-sora'>
-        <h1 className='text-7xl text-center text-tertiary font-sora my-20'>About Us</h1>
-        <div className='grid grid-rows-2  md:grid-cols-2 gap-4'>
+      <section className='pt-10 bg-black'>
+        <Heading heading="About Us" />
+        <div className='grid  p-4 md:flex md:flex-wrap lg:grid lg:grid-cols-3 md:gap-4 gap-y-10'>
           <div className=''>
-
-            <AboutCard heading="Vision" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore." link="/images/Mission.svg" />
+            <AboutCard heading="Community" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore." link="/images/Mission.svg" />
           </div>
           <div className=''>
-            <AboutCard heading="Mission" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/Mission.svg" />
+            <AboutCard heading="Principles" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/Mission.svg" />
           </div>
-
-
+          <div className=''>
+            <AboutCard heading="Goals" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/Mission.svg" />
+          </div>
         </div>
       </section>
+      <section className='bg-black pt-4'>
+        <Heading heading="Past Events" />
+
+        <div className='lg:grid-cols-2 lg:grid bg-[url(/images/robot.svg)] bg-no-repeat bg-cover bg-left-bottom md:bg-contain md:bg-right-bottom' style={{ backgroundSize: "" }}>
+          <div className='flex justify-center items-center h-[700px] md:h-[800px] opacity-90 '>
+            <EventsCarousel className="h-auto" />
+          </div>
+
+
+          {/* <div className='h-[400px] mb-10 bg-secondary rounded-xl w-[75%] mx-auto'> */}
+
+          {/* </div> */}
+        </div>
+      </section >
 
 
     </>
