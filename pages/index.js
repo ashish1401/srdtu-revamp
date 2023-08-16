@@ -70,10 +70,10 @@ export default function Home() {
         </div>
       </section >
 
-      <section className='bg-black text-white  py-20'>
+      <section className='bg-black bg-des-1 bg-no-repeat bg-bottom bg-contain md:bg-cover  text-white  py-20'>
         <div className='flex flex-col-reverse lg:grid lg:grid-cols-2'>
           <div className=''>
-            <Image src="/images/home/FAQ.svg" width={1000} height={1000} />
+            <Image src="/images/home/FAQ.svg" className='drop-shadow-2xl' width={1000} height={1000} />
           </div>
           <div className=''>
             <Heading heading="FAQs!" />
@@ -88,8 +88,32 @@ export default function Home() {
       </section>
 
 
-      <section className='bg-secondary'>
+      <section className='bg-secondary drop-shadow-sm pb-10'>
         <Heading heading="Collaborators" />
+        <div className='flex flex-col md:flex-row md:justify-around'>
+          <div>
+            <h3 className='md:text-4xl text-2xl  text-center text-tertiary font-pop py-16' >
+              Other Collaborators
+            </h3>
+
+          </div>
+          <div className='w-auto '>
+            <h3 className='md:text-4xl text-2xl  text-center text-tertiary font-pop py-16' >
+              Prime Sponsors
+            </h3>
+            <div className='grid grid-cols-3 grid-rows-2 bg-black bg-opacity-10 mx-4 gap-4 rounded-xl '>
+
+              <div className="h-32  w-32 m-2 rounded-xl">  </div>
+              <div className="h-32 w-32  m-2 rounded-xl">    </div>
+              <div className="h-32  w-32  m-2 rounded-xl">    </div>
+              <div className="h-32  w-32  m-2 rounded-xl">    </div>
+              <div className="h-32  w-32 m-2 rounded-xl">    </div>
+              <div className="h-32  w-32  m-2 rounded-xl">    </div>
+
+            </div>
+          </div>
+
+        </div>
 
       </section>
 
