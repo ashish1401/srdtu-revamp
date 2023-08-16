@@ -3,6 +3,7 @@ import '../styles/tailwind.css'
 import '../styles/globals.css';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 function MyApp({ Component, pageProps }) {
     return <>
         <Head>
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
     </>;
 }
 
