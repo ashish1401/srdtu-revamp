@@ -4,7 +4,6 @@ import '../styles/globals.css';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
 import Enroll from '../components/Enroll';
-import AboutCard from '../components/home/AboutCard';
 
 function MyApp({ Component, pageProps }) {
     return <>
@@ -18,11 +17,7 @@ function MyApp({ Component, pageProps }) {
         <div className='relative '>
             <Navbar />
         </div>
-        <div className='relative bg-black w-full h-full py-30'>
-            <Enroll/>
-            <AboutCard/>
-        </div>
-        
+
         <Component {...pageProps} />
     </>;
 }
