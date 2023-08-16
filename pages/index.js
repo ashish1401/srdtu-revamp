@@ -97,18 +97,19 @@ export default function Home() {
             </h3>
 
           </div>
-          <div className='w-auto '>
+          <div className='md:w-1/2 '>
             <h3 className='md:text-4xl text-2xl  text-center text-tertiary font-pop py-16' >
               Prime Sponsors
             </h3>
-            <div className='grid grid-cols-3 grid-rows-2 bg-black bg-opacity-10 mx-4 gap-4 rounded-xl '>
+            <div className='grid grid-cols-3 grid-rows-2 bg-black bg-opacity-10 mx-4 md:w-full h-96 gap-4 rounded-xl '>
 
-              <div className="h-32  w-32 m-2 rounded-xl">  </div>
-              <div className="h-32 w-32  m-2 rounded-xl">    </div>
-              <div className="h-32  w-32  m-2 rounded-xl">    </div>
-              <div className="h-32  w-32  m-2 rounded-xl">    </div>
-              <div className="h-32  w-32 m-2 rounded-xl">    </div>
-              <div className="h-32  w-32  m-2 rounded-xl">    </div>
+              <div className=" m-2 rounded-xl">  </div>
+              <div className=" m-2 rounded-xl">  </div>
+              <div className=" m-2 rounded-xl">  </div>
+              <div className=" m-2 rounded-xl">  </div>
+              <div className=" m-2 rounded-xl">  </div>
+              <div className=" m-2 rounded-xl">  </div>
+
 
             </div>
           </div>
