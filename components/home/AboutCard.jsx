@@ -14,4 +14,23 @@ const AboutCard = (props) => {
     )
 }
 
-export default AboutCard
+const Card = () => {
+    return (
+        <section className='pt-5 bg-gradient-to-l from-gray-700 via-gray-900 to-black font-sora'>
+        <h1 className='text-7xl text-center text-tertiary font-sora my-20'>About Us</h1>
+        <div className='grid grid-rows-2  md:grid-cols-2 gap-4'>
+          <div className=''>
+
+            <AboutCard heading="Vision" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore." link="/images/Mission.svg" />
+          </div>
+          <div className=''>
+            <AboutCard heading="Mission" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/Mission.svg" />
+          </div>
+
+
+        </div>
+      </section>
+    )
+}
+
+export default Card

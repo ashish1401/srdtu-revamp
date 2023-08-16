@@ -3,6 +3,9 @@ import '../styles/tailwind.css'
 import '../styles/globals.css';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
+import Enroll from '../components/Enroll';
+import AboutCard from '../components/home/AboutCard';
+
 function MyApp({ Component, pageProps }) {
     return <>
         <Head>
@@ -12,7 +15,14 @@ function MyApp({ Component, pageProps }) {
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap"
                 rel="stylesheet" />
         </Head>
-        <Navbar />
+        <div className='relative '>
+            <Navbar />
+        </div>
+        <div className='relative bg-black w-full h-full py-30'>
+            <Enroll/>
+            <AboutCard/>
+        </div>
+        
         <Component {...pageProps} />
     </>;
 }
