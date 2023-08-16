@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import AboutCard from '../components/home/AboutCard';
 import Heading from '../components/Heading';
 import EventsCarousel from '../components/home/EventsCarousel';
+import FreqQuestions from '../components/home/FreqQuestions';
 export default function Home() {
   return (
     <>
@@ -40,25 +41,26 @@ export default function Home() {
         </motion.section >
       </div >
       <section className='pt-10 bg-black'>
-        <Heading heading="About Us" />
         <div className='grid  p-4 md:flex md:flex-wrap lg:grid lg:grid-cols-3 md:gap-4 gap-y-10'>
           <div className=''>
-            <AboutCard heading="Community" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore." link="/images/Mission.svg" />
+            <AboutCard heading="Community" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore." link="/images/home/Mission.svg" />
           </div>
           <div className=''>
-            <AboutCard heading="Principles" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/Mission.svg" />
+            <AboutCard heading="Principles" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/home/Mission.svg" />
           </div>
           <div className=''>
-            <AboutCard heading="Goals" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/Mission.svg" />
+            <AboutCard heading="Goals" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/home/Mission.svg" />
           </div>
         </div>
       </section>
       <section className='bg-black pt-4'>
         <Heading heading="Past Events" />
-
         <div className='lg:grid-cols-2 lg:grid bg-[url(/images/robot.svg)] bg-no-repeat bg-cover bg-left-bottom md:bg-contain md:bg-right-bottom' style={{ backgroundSize: "" }}>
           <div className='flex justify-center items-center h-[700px] md:h-[800px] opacity-90 '>
-            <EventsCarousel className="h-auto" />
+            <EventsCarousel className="" />
+          </div>
+          <div>
+
           </div>
 
 
@@ -67,6 +69,30 @@ export default function Home() {
           {/* </div> */}
         </div>
       </section >
+
+      <section className='bg-black text-white  py-20'>
+        <div className='flex flex-col-reverse lg:grid lg:grid-cols-2'>
+          <div className=''>
+            <Image src="/images/home/FAQ.svg" width={1000} height={1000} />
+          </div>
+          <div className=''>
+            <Heading heading="FAQs!" />
+            <p className='font-pop mx-auto text-center text-2xl'>
+              Questions regarding our Society?? We got them covered
+            </p>
+            <div className='mx-auto w-[90%] md:w-[75%] '>
+              <FreqQuestions />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className='bg-secondary'>
+        <Heading heading="Collaborators" />
+
+      </section>
+
 
 
     </>
