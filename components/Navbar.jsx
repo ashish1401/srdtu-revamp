@@ -22,7 +22,7 @@ const Navbar = () => {
                         <Li params="" style={style} />
                         <Li params="events" />
                         <a href="" className="flex items-center">
-                            <Image src="/images/Logo.png" width={300} height={300} alt="SR DTU logo" />
+                            <Image src="/images/Logo.png" width={50} height={50} alt="SR DTU logo" />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap hidden md:block ">SOCIETY OF ROBOTICS</span>
                         </a>
                         <Li params="gallery" />
