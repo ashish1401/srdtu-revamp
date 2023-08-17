@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-three/drei": "^9.80.3",
+    "@react-three/fiber": "^8.13.6",
     "framer-motion": "^10.15.2",
     "next": "latest",
     "react": "18.2.0",
@@ -13,6 +15,7 @@
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.15.0",
     "react-scripts": "^5.0.1",
+    "three": "^0.155.0",
     "swiper": "^10.1.0"
   },
   "devDependencies": {
