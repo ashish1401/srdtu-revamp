@@ -4,6 +4,7 @@ import '../styles/globals.css';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
 import Footer from '../components/Footer';
+
 function MyApp({ Component, pageProps }) {
     return <>
         <Head>
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap"
                 rel="stylesheet" />
         </Head>
+        
         <div className='relative '>
             <Navbar />
         </div>
