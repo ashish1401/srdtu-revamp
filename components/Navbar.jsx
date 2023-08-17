@@ -17,12 +17,12 @@ const Navbar = () => {
 
                 {/* <div className="flex md:order-2">
             </div> */}
-                <div className="justify-between mx-auto w-full md:flex md:w-auto md:order-1">
-                    <ul className='flex text-sm  md:p-0 mt-4 font-medium  border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 '>
+                <div className="justify-between items-center m-auto w-full md:flex md:w-auto md:order-1">
+                    <ul className='flex text-sm  md:p-0 mt-4 items-center font-medium  border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 '>
                         <Li params="" style={style} />
                         <Li params="events" />
                         <a href="" className="flex items-center">
-                            <Image src="/images/Logo.png" width={300} height={300} alt="SR DTU logo" />
+                            <Image src="/images/Logo.png" width={100} height={100} alt="SR DTU logo" />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap hidden md:block ">SOCIETY OF ROBOTICS</span>
                         </a>
                         <Li params="gallery" />
