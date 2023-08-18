@@ -13,7 +13,7 @@ const Enroll = () => {
         className=' w-[50%] mx-auto p-4 md:p-10 text-black'
       >
         <div className='flex flex-col gap-10'>
-          <div className='relative w-full'>
+          <div className='relative w-full lg:w-[50%]'>
             {/* <Image className='shadow-2xl rounded-2xl' width={700} height={700} src="/images/HERO.png">
               </Image> */}
             <Bot />
