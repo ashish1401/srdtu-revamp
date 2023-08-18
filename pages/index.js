@@ -17,7 +17,7 @@ export default function Home() {
         <title>Home - SR DTU</title>
       </Head>
 
-      <div className=''>
+      <div className='w-full bg-black'>
         <Enroll />
       </div>
       

@@ -5,22 +5,22 @@ import Image from 'next/image';
 
 const Enroll = () => {
   return (
-    <div className='grid-cols-2 flex mt-[70px] pt-10 bg-gradient-to-r shadow from-black to-blue-700 h-[600px]'>
+    <div className='flex flex-row lg:mt-[70px] pt-10 bg-gradient-to-r shadow from-black to-blue-700 h-[600px]'>
       <motion.section
         animate={{ x: 50 }}
         transition={{ ease: "easeOut", duration: 2 }}
         // style={{ "backgroundImage": "linear-gradient(to bottom, #0e3b8a, #0e387f, #0e3475, #0f316a, #102d60, #112c5c, #112a59, #122955, #122a57, #132b59, #132d5b, #132e5d)" }} 
         className=' w-[50%] mx-auto p-4 md:p-10 text-black'
       >
-        <div className='grid-rows-2 flex flex-col gap-10'>
-          <div className='relative w-[40%]'>
+        <div className='flex flex-col gap-10'>
+          <div className='relative w-full'>
             {/* <Image className='shadow-2xl rounded-2xl' width={700} height={700} src="/images/HERO.png">
               </Image> */}
             <Bot />
           </div>
           <div className='my-auto text-tertiary tracking-[-2px] font-extrabold'>
             <motion.div
-              className='px-12 py-1'
+              className='py-1'
               initial={{ opacity: 0 }}
               animate={{ opacity: 100, x: 200 }}
               transition={{ delay: 0.2, type: 'tween', duration: 2 }}
@@ -36,11 +36,13 @@ const Enroll = () => {
         </div>
       </motion.section >
 
-      <motion.div className='w-[50%]'
-        animate={{ x: -50 }}
-        transition={{ ease: "easeIn", duration: 2 }}
-      >
-        <Hero />
+      
+  
+      <motion.div className='relative w-full'
+            animate={{ x: -50 }}
+            transition={{ ease: "easeIn", duration: 2 }}
+          >
+            <Hero />
       </motion.div>
     </div >
   )

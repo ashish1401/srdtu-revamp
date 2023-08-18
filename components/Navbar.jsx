@@ -18,13 +18,10 @@ const Navbar = () => {
                 {/* <div className="flex md:order-2">
             </div> */}
                 <div className="justify-between items-center m-auto w-full md:flex md:w-auto md:order-1">
-                    <ul className='flex text-sm  md:p-0 mt-4 items-center font-medium  border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 '>
+                    <ul className='flex text-sm  md:p-0 mt-4 items-center font-medium  border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 gap-10'>
                         <Li params="" style={style} />
                         <Li params="events" />
                         <a href="" className="flex items-center">
-
-                            <Image src="/images/Logo.png" width={50} height={50} alt="SR DTU logo" />
-
                             <Image src="/images/Logo.png" width={100} height={100} alt="SR DTU logo" />
 
                         </a>
@@ -42,7 +39,7 @@ const Li = (props) => {
     const [style, setStyle] = useState({});
 
     return (<div>
-        <li className='rounded-full block py-2 pl-3 pr-4 font-'
+        <li className='rounded-full block py-2 pl-3 pr-4'
 
 
 
