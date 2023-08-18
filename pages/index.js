@@ -3,7 +3,9 @@ import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import { motion } from 'framer-motion'
+import Hero from '../components/home/Hero';
 import Enroll from '../components/Enroll';
+import About from './about-us';
 import AboutCard from '../components/home/AboutCard';
 import Heading from '../components/Heading';
 import EventsCarousel from '../components/home/EventsCarousel';
@@ -15,10 +17,12 @@ export default function Home() {
         <title>Home - SR DTU</title>
       </Head>
 
-      <div>
+      <div className=''>
         <Enroll />
       </div>
-      <section className='pt-10 bg-black'>
+      
+      <section className=' bg-black'>
+        <Heading heading="About Us" />
         <div className='grid  p-4 md:flex md:flex-wrap lg:grid lg:grid-cols-3 md:gap-4 gap-y-10'>
           <div className=''>
             <AboutCard heading="Community" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore." link="/images/home/Mission.svg" />

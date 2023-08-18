@@ -13,7 +13,7 @@ const Enroll = () => {
         className=' w-[50%] mx-auto p-4 md:p-10 text-black'
       >
         <div className='grid-rows-2 flex flex-col gap-10'>
-          <div className='relative w-full'>
+          <div className='relative w-[40%]'>
             {/* <Image className='shadow-2xl rounded-2xl' width={700} height={700} src="/images/HERO.png">
               </Image> */}
             <Bot />
@@ -27,9 +27,9 @@ const Enroll = () => {
             >
               {/* <Image src="/images/Logo.png" width={100} height={100} className='absolute  mt-2 ' /> */}
             </motion.div>
-            <p className='text-7xl font-sora mb-4 bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500 bg-clip-text text-transparent'>SR DTU</p>
-            <p className='text-2xl md:text-5xl font-sora whitespace-nowrap'>Join the Bot Revolution</p>
-            <div className='mt-12'>
+            <p className='px-2 text-7xl font-sora mb-4 bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500 bg-clip-text text-transparent'>SR DTU</p>
+            <p className='px-2 text-2xl md:text-5xl font-sora whitespace-nowrap'>Join the Bot Revolution</p>
+            <div className='px-2 mt-12'>
               <button className=' bg-tertiary bg-opacity-20 hover:text-secondary rounded-3xl p-4 font-sora text-2xl md:text-3xl  hover:bg-opacity-100 transition-all'>Enroll Now</button>
             </div>
           </div>
