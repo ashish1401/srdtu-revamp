@@ -21,9 +21,9 @@ const Robot = ({isMobile}) => {
             />
             <primitive
                 object={drone.scene}
-                scale={isMobile ? 2.20 : 7.750}
-                position = {isMobile ? [-0.75,-2,-2.2] : [0,-6,0]}
-                rotation={[0,1.35,0]}
+                scale={isMobile ? 6.50 : 7.750}
+                position = {isMobile ? [0,-5,0] : [0,-6,0]}
+                rotation={[0,0,0]}
             />
         </mesh>
     )

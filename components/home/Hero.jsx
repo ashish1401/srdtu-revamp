@@ -21,8 +21,8 @@ const Drone = ({ isMobile }) => {
             />
             <primitive
                 object={drone.scene}
-                scale={isMobile ? 2.20 : 5.750}
-                position={isMobile ? [-0.75, -2, -2.2] : [0, 2, 0]}
+                scale={isMobile ? 4.00 : 5.750}
+                position={isMobile ? [0, 3, -0.25] : [0, 2, 0]}
                 rotation={[0, 1.35, 0]}
             />
         </mesh>
@@ -47,7 +47,6 @@ const Hero = () => {
 
     return (
         <Canvas
-            frameloop='demand'
             shadows
             camera={{ position: [20, 3, 5], fov: 55 }}
             gl={{ preserveDrawingBuffer: true }}
