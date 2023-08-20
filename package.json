@@ -9,6 +9,7 @@
     "@react-three/drei": "^9.80.3",
     "@react-three/fiber": "^8.13.6",
     "framer-motion": "^10.15.2",
+    "gltfjsx": "^6.2.11",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
