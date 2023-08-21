@@ -105,10 +105,14 @@ const Footer = () => {
             </div>
 
         </div>
+        <div>
+        <p className="text-dark flex items-center justify-center text-sm font-medium">
+      © 2023 SR-DTU
+    </p>
+            </div>
     </div>
-    <div className="w-full px-4 sm:w-1/2 lg:w-2/12 text-center">
-    <p className='text-dark mb-3 text-lg font-bold'>© 2023 SR-DTU</p>  
-    </div>
+
+
   </footer>
   );
 };

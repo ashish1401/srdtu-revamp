@@ -2,6 +2,11 @@
   margin-bottom: 27px;
 }
 
+@media (min-width: 1024px)
+.lg\:pb-20 {
+    padding-bottom: 1rem;
+}
+
 .p {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
