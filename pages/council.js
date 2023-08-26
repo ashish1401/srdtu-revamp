@@ -1,184 +1,115 @@
 import Head from 'next/head';
 import styles from '../styles/Council.module.css';
-import Navbar from '../components/Navbar';
-import Image from 'next/image';
-import AboutCard from '../components/home/AboutCard';
-import { IMAGES_MANIFEST } from 'next/dist/shared/lib/constants';
+import Link from 'next/link';
+import React, {useState} from 'react';
+import { SeniorcouncilMembers, JuniorcouncilMembers } from '../constants';
+import { LinkedinShareButton, LinkedinIcon,} from 'next-share';
+import {FaInstagram, FaInstagramSquare} from 'react-icons/fa'
 
 
-// const Council = () => {
-//     return (
-//         <>
-//             <Head>
-//                 <title>Council - SR DTU</title>
-//             </Head>
-                    
-//             <div>
-//                 Council
-//             </div>
-//             <div className={styles.container}>
-//             <h1 className={styles.heading}>Council 2022-2023</h1>
-//             <div className={styles.cardContainer}>
-//                 <div className={styles.cardWrapper}>
-//                 <div className={styles.card}>
-//                     <div className={styles.cardInner}>
-//                     <div className={styles.cardFront}>
-//                         <div className={styles.cardContent}>
-//                         <img src="images/Council/Yash.jpg" alt="Error aa gaya kya?" className={styles.profileImage} />
-//                         <h2 className={styles.position}>President </h2>
-//                         <h1 className={styles.name}>Yash Jangra</h1>
-//                         </div>
-//                     </div>
-//                     <div className={styles.cardBack}>
-//                         <div className={styles.cardContent}>
-//                         <p>One-liner description about the person 1.</p>
-//                         </div>
-//                     </div>
-//                     </div>
-//                 </div>
-//                 </div>
-//                 <div className={styles.cardWrapper}>
-//                 <div className={styles.card}>
-//                     <div className={styles.cardInner}>
-//                     <div className={styles.cardFront}>
-//                         <div className={styles.cardContent}>
-//                         <img src="images/Council/Rishabh.jpg" alt="Profile" className={styles.profileImage} />
-//                         <h2 className={styles.position}>Vice President</h2>
-//                         <h1 className={styles.name}>Rishabh Jain</h1>
-//                         </div>
-//                     </div>
-//                     <div className={styles.cardBack}>
-//                         <div className={styles.cardContent}>
-//                         <p>One-liner description about the person 1.</p>
-//                         </div>
-//                     </div>
-//                     </div>
-//                 </div>
-//                 </div>
-//                 <div className={styles.cardWrapper}>
-//                 <div className={styles.card}>
-//                     <div className={styles.cardInner}>
-//                     <div className={styles.cardFront}>
-//                         <div className={styles.cardContent}>
-//                         <img src="images/Council/Naksh2.jpg" alt="Profile" className={styles.profileImage} />
-//                         <h2 className={styles.position}>Vice President </h2>
-//                         <h1 className={styles.name}>Nakshatra Jain</h1>
-//                         </div>
-//                     </div>
-//                     <div className={styles.cardBack}>
-//                         <div className={styles.cardContent}>
-//                         <p>One-liner description about the person 1.</p>
-//                         </div>
-//                     </div>
-//                     </div>
-//                 </div>
-//                 </div>
-//                 <div className={styles.cardWrapper}>
-//                 <div className={styles.card}>
-//                     <div className={styles.cardInner}>
-//                     <div className={styles.cardFront}>
-//                         <div className={styles.cardContent}>
-//                         <img src="images/Council/Rachit.jpg" alt="Profile" className={styles.profileImage} />
-//                         <h2 className={styles.position}>Treasurer </h2>
-//                         <h1 className={styles.name}>Rachit Mimrot</h1>
-//                         </div>
-//                     </div>
-//                     <div className={styles.cardBack}>
-//                         <div className={styles.cardContent}>
-//                         <p>One-liner description about the person 1.</p>
-//                         </div>
-//                     </div>
-//                     </div>
-//                 </div>
-//                 </div>
-//                 <div className={styles.cardWrapper}>
-//                 <div className={styles.card}>
-//                     <div className={styles.cardInner}>
-//                     <div className={styles.cardFront}>
-//                         <div className={styles.cardContent}>
-//                         <img src="images/Council/Kunal.jpg" alt="Profile" className={styles.profileImage} />
-//                         <h2 className={styles.position}>Advisor</h2>
-//                         <h1 className={styles.name}>Kunal Bansal</h1>
-//                         </div>
-//                     </div>
-//                     <div className={styles.cardBack}>
-//                         <div className={styles.cardContent}>
-//                         <p>One-liner description about the person 1.</p>
-//                         </div>
-//                     </div>
-//                     </div>
-//                 </div>
-//                 </div>
-//             </div>
-//             </div>
+function InstagramButton({ url }) {
+    const instagramUrl = `${encodeURIComponent(url)}`;
+  
+    return (
+      <Link href={instagramUrl} target="_blank" rel="noopener noreferrer">
+        <FaInstagram size={32} style={{ color: '#ff69b4', borderRadius: '0%', background: 'transparent' }}/>
+      </Link>
+    );
+  }
 
-//             </>
-
-//     )
-// }
-
-// ... Other imports ...
-
-const SeniorcouncilMembers = [
-    { name: "Yash Jangra", position: "President" },
-    { name: "Rishabh Jain", position: "Vice President" },
-    { name: "Nakshatra Jain", position: "Vice President" },
-    { name: "Rachit Mimrot", position: "Treasurer" },
-    { name: "Kunal Bansal", position: "Advisor" },
-];
-
-const JuniorcouncilMembers = [
-    { name: "Harsh Pandey", position: "General Secretary" },
-    { name: "Devansh Wassista", position: "Joint Secretary" },
-    { name: "Himanshu Singh", position: "Joint Secretary" },
-    { name: "Kartik Kasana", position: "Joint Treasurer" },
-    { name: "Kartik Upadhyay", position: "PR and Corpo Head" },
-    { name: "Manav Aggarwal", position: "PR and Corpo Head" },
-    { name: "Ashish Chotani", position: "Technical Head" },
-    { name: "Dhruv Upreti", position: "Technical Head" },
-    { name: "Manav Singh", position: "Technical Head" },
-    { name: "Shubhojit Gosh", position: "Design and Content Head" },
-    { name: "Vaibhav Sharma", position: "Design and Content Head" },
-    { name: "Pritthish", position: "Logistics and Hospitality Head" },
-    { name: "Ayush", position: "Logistics and Hospitality Head" },
-    { name: "Prithvi", position: "Logistics and Hospitality Head" },
-    { name: "Shikhar Rajput", position: "Logistics and Hospitality Head" },
-];
 
 const Council = () => {
+    const [activeButton, setActiveButton] = useState('senior'); // Default active button
+
+    const handleButtonClick = (buttonType) => {
+        setActiveButton(buttonType);
+    };
     return (
         <>
             <Head>
                 <title>Council - SR DTU</title>
             </Head>
-            <div>
-                Council
-            </div>
-            <div className={styles.container}>
-                <h1 className={styles.heading}>Council 2022-2023</h1>
-                <div className={styles.cardContainer}>
-                    {SeniorcouncilMembers.map((member, index) => (
-                        <div className={styles.cardWrapper} key={index}>
-                            <div className={styles.card}>
-                                <div className={styles.cardInner}>
-                                    <div className={styles.cardFront}>
-                                        <div className={styles.cardContent}>
-                                            <img src={`images/Council/Member${index + 1}.jpg`} alt="Profile" className={styles.profileImage} />
-                                            <h2 className={styles.position}>{member.position}</h2>
-                                            <h1 className={styles.name}>{member.name}</h1>
+            {/* Buttons for navigation */}
+            <div className="min-h-screen bg-gradient-to-l from-blue-100 via-blue-200 to-blue-200 flex flex-col justify-center items-center">
+                <h1 className={`text-[52px] mt-[80px] mb-[20px] font-black bg-clip-text text-transparent bg-gradient-to-t from-indigo-900 via-slate-800 to-indigo-900 lg:text-[72px] sm:text-[60px] xs:text-[50px] lg:leading-[98px]`}>COUNCIL 2022-2023</h1>
+                <div className="flex gap-12 items-center">
+                    <button
+                        className={`bg-gradient-to-t from-sky-200 to-sky-200 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 md:text-xl shadow ${activeButton === 'senior' ? 'border-4 border-blue-700' : 'border-stone-600'}`}
+                        onClick={() => handleButtonClick('senior')}
+                    >
+                        SENIOR COUNCIL
+                    </button>
+                    <button
+                        className={`bg-gradient-to-t from-sky-200 to-sky-200 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 md:text-xl shadow ${activeButton === 'junior' ? 'border-4 border-blue-700' : 'border-stone-600'}`}
+                        onClick={() => handleButtonClick('junior')}
+                    >
+                        JUNIOR COUNCIL
+                    </button>
+                </div>
+                {/* Cards Content for members */}
+                <div className="mt-10 mb-20">
+                    {activeButton === 'senior' && (
+                        <div className="">
+                            <div className={styles.container}>
+                                {/* cards - senior council */}
+                                <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 pl-[10px] pr-[10px] justify-between`}>
+                                    {SeniorcouncilMembers.map((member, index) => (   
+                                        <div class="relative w-[300px] rounded-xl shadow bg-gray-800 border-gray-700">
+                                            {/* Profile image */}
+                                            <img src={`images/Council/SeniorCouncilMember${index + 1}.jpg`} alt="Profile" className={`w-[300px] h-[300px] rounded-t-xl`} />
+                                            {/* Info */}
+                                            <div class="p-5">
+                                                <h5 class="mb-2 text-3xl font-bold tracking-tight text-amber-500">{member.name}</h5>
+                                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-300">{member.position}</h5>
+                                                <p class="mb-3 font-normal  text-gray-400">{member.info}</p>
+                                                
+                                                <div className='flex flex-row gap-4  pt-3'>
+                                                    <InstagramButton url={member.insta}/>
+                                                    <LinkedinShareButton
+                                                        url={member.linkedin} >
+                                                        <LinkedinIcon size={32} round />
+                                                    </LinkedinShareButton>
+                                                </div>
+                                                
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className={styles.cardBack}>
-                                        <div className={styles.cardContent}>
-                                            <p>One-liner description about {member.name}.</p>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
-                    ))}
+                    )}
+
+                    {activeButton === 'junior' && (
+                        <div className="">
+                        <div className={styles.container}>
+                            {/* cards - senior council */}
+                            <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-[20px] pr-[10px] justify-between`}>
+                                {JuniorcouncilMembers.map((member, index) => (   
+                                    <div class="relative w-[280px] rounded-xl shadow bg-gray-800 border-gray-700">
+                                        {/* Profile image */}
+                                        <img src={`images/Council/JuniorCouncilMember${index + 1}.jpg`} alt="Profile" className={`w-[300px] h-[300px] rounded-t-xl`} />
+                                        {/* Info */}
+                                        <div class="p-5">
+                                            <h5 class="mb-2 text-3xl font-bold tracking-tight text-amber-500">{member.name}</h5>
+                                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-300">{member.position}</h5>
+                                            
+                                            <div className='flex flex-row gap-4  pt-3'>
+                                                    <InstagramButton url={member.insta}/>
+                                                    <LinkedinShareButton
+                                                        url={member.linkedin} >
+                                                        <LinkedinIcon size={32} round />
+                                                    </LinkedinShareButton>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    )}
                 </div>
             </div>
+            
         </>
     )
 }
