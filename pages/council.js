@@ -19,7 +19,7 @@ function InstagramButton({ url }) {
 
 
 const Council = () => {
-    const [activeButton, setActiveButton] = useState('senior'); // Default active button
+    const [activeButton, setActiveButton] = useState('senior');
 
     const handleButtonClick = (buttonType) => {
         setActiveButton(buttonType);
