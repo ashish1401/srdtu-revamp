@@ -82,7 +82,7 @@ const Council = () => {
                     {activeButton === 'junior' && (
                         <div className="">
                         <div className={styles.container}>
-                            {/* cards - senior council */}
+                            {/* cards - junior council */}
                             <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-[20px] pr-[10px] justify-between`}>
                                 {JuniorcouncilMembers.map((member, index) => (   
                                     <div class="relative w-[280px] rounded-xl shadow bg-gray-800 border-gray-700">
