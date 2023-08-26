@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,11 +16,11 @@
   .cardContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 20px;
-    padding: 20px 10px; 
+    padding: 20px 10px;
+    justify-content: space-between;
   }
-  
+
   .cardWrapper {
     flex-basis: calc(33.33% - 20px);
     margin: 10px;
@@ -127,4 +127,178 @@
     font-size: 48px;
     margin-top: 100px;
     margin-bottom: 10px;
+  } */
+
+  /* @import '/styles/tailwindcss/base';
+  @import '/styles/tailwindcss/components';
+  @import '/styles/tailwindcss/utilities'; */
+
+  /* IMPPPPPPPPPPPPPPPPPPPPPP!!!!!!!!!!!! */
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    /* min-width: 100vb; */
+    width: 100%;
   }
+  
+  .navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .cardWrapper {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 120px;
+    box-sizing: border-box; 
+  }
+
+  .card {
+    width: 120%;
+    height: 510px;
+    min-width: 20vb;
+    perspective: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid navy;
+  }
+  
+  .cardInner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  /* .card:hover .cardInner {
+    transform: rotateY(180deg);
+  } */
+  
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .profileImage {
+    width: 190px;
+    height: 270px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .cardFront,
+  .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardFront {
+    transform: rotateY(0deg);
+  }
+  
+  .cardBack {
+    transform: rotateY(180deg);
+  }
+   
+  .position {
+    font-size: 16px; 
+    margin-top: 10px; 
+  }
+  
+  .name {
+    font-size: 24px; 
+    margin-bottom: 5px; 
+  }
+
+  .heading {
+    font-size: 48px;
+    margin-top: 140px;  
+    margin-bottom: 0px;
+  }
+
+
+  /*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+/* .council-container html,
+.council-container body{
+  @apply h-full w-full;
+}
+.background {
+  @apply absolute h-[120%] w-[120%] bg-cover bg-center bg-no-repeat blur-[30px] -left-10 -top-10 bg-[url("/images/Council/Member1")];
+}
+.card-blur {
+  @apply absolute h-full w-[calc(100%_+_1px)] bg-[black] opacity-0 transition-opacity duration-[0.15s] ease-[ease-in];
+}
+.card:hover .card-blur {
+  @apply opacity-60;
+}
+.footer {
+  @apply z-[1] absolute h-20 w-full bottom-0;
+}
+svg#curve {
+  @apply absolute fill-[white] w-[400px] h-[450px] left-0 bottom-0;
+}
+.connections {
+  @apply h-20 w-[400px] absolute m-auto bottom-[100px] inset-x-0;
+}
+.connection {
+  @apply h-[25px] w-[25px] bg-[white] inline-block translate-y-[200px] transition-transform duration-[1s] ease-[cubic-bezier(.46,1.48,0.18,0.81)] mr-[25px] p-[5px] rounded-[100%];
+}
+.card:hover .connection {
+  @apply translate-y-0;
+}
+.info {
+  @apply translate-y-[250px] transition-transform duration-[1s] ease-[cubic-bezier(.31,1.21,0.64,1.02)] pl-5;
+  font-family: Inconsolata;
+}
+.card:hover .info {
+  @apply translate-y-0;
+}
+.name {
+  @apply font-[bolder] pt-[5px];
+}
+.job {
+  @apply mt-2.5;
+}
+.connection.facebook {
+  @apply h-[35px] w-[35px] overflow-hidden ml-5 p-0 rounded-[100%];
+}
+.connection.twitter {
+  @apply delay-[0.06s];
+}
+.connection.behance {
+  @apply delay-[0.12s];
+}
+.connection.facebook .icon {
+  @apply h-full w-full bg-center bg-cover bg-[black] bg-[url("/images/Council/Member1")];
+}
+.connection.twitter .icon {
+  @apply h-[18px] w-[18px] bg-center bg-cover ml-1 mt-1 bg-[url("/images/Council/Member1")];
+} */
