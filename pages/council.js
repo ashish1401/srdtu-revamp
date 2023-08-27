@@ -31,16 +31,16 @@ const Council = () => {
             </Head>
             {/* Buttons for navigation */}
             <div className="min-h-screen bg-black md:pt-10 font-sora flex flex-col justify-center items-center">
-                <h1 className={`text-[52px] mt-[80px] mb-[20px] font-black bg-clip-text font-sora text-transparent lg:text-[72px] sm:text-[60px] xs:text-[50px] lg:leading-[98px] bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500`}>COUNCIL 2022-2023</h1>
-                <div className="flex gap-12 items-center font-sora">
+                <h1 className={`text-[32px] mt-[80px] mb-[20px] font-black bg-clip-text font-sora text-transparent lg:text-[72px] sm:text-[60px] xs:text-[50px] lg:leading-[98px] bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500`}>COUNCIL 2022-2023</h1>
+                <div className="flex gap-12 p-4 md:p-0 items-center font-sora">
                     <button
-                        className={`text-white bg-gradient-to-t from-black to-blue-500 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 md:text-xl shadow ${activeButton === 'senior' ? 'border-2 border-tertiary ' : 'border-stone-600'}`}
+                        className={`text-white bg-gradient-to-t from-black to-blue-500 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 text-lg  md:text-xl shadow ${activeButton === 'senior' ? 'border-2 border-tertiary ' : 'border-stone-600'}`}
                         onClick={() => handleButtonClick('senior')}
                     >
                         SENIOR COUNCIL
                     </button>
                     <button
-                        className={`text-white bg-gradient-to-t from-black to-blue-500 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 md:text-xl shadow ${activeButton === 'junior' ? 'border-2 border-tertiary' : 'border-stone-600'}`}
+                        className={`text-white bg-gradient-to-t from-black to-blue-500 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 text-lg md:text-xl shadow ${activeButton === 'junior' ? 'border-2 border-tertiary' : 'border-stone-600'}`}
                         onClick={() => handleButtonClick('junior')}
                     >
                         JUNIOR COUNCIL
@@ -87,7 +87,7 @@ const Council = () => {
                         <div className="">
                             <div className={styles.container}>
                                 {/* cards - junior council */}
-                                <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-[20px] pr-[10px] justify-between`}>
+                                <div className={`grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-[20px] pr-[10px] justify-between`}>
                                     {JuniorcouncilMembers.map((member, index) => (
                                         <div class="relative w-[300px] rounded-xl shadow bg-gray-800 border-gray-700">
                                             {/* Profile image */}
