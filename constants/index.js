@@ -42,19 +42,19 @@ const SeniorcouncilMembers = [
 
 const JuniorcouncilMembers = [
     { 
-        name: "Devansh Wassista", 
-        position: "Joint Secretary" , 
-        insta: "https://www.instagram.com/", 
-        linkedin: "https://www.linkedin.com/in/devansh-wassista-a2a0a422b",
-        github: "https://github.com/Devansh121" , 
-        info: ""
-    },
-    { 
         name: "Harsh Pandey", 
         position: "General Secretary" , 
         insta: "https://www.instagram.com/harshpandey_21/", 
         linkedin: "https://www.linkedin.com/in/harsh-pandey-47456522b/",
         github: "https://github.com/" , 
+        info: ""
+    },
+    { 
+        name: "Devansh Wassista", 
+        position: "Joint Secretary" , 
+        insta: "https://www.instagram.com/", 
+        linkedin: "https://www.linkedin.com/in/devansh-wassista-a2a0a422b",
+        github: "https://github.com/Devansh121" , 
         info: ""
     },
     { 
