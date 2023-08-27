@@ -6,8 +6,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.80.3",
     "@react-three/fiber": "^8.13.6",
+    "emailjs": "^4.0.2",
     "framer-motion": "^10.15.2",
     "next": "latest",
     "next-share": "^0.25.0",
