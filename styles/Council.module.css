@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cardContainer {
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardContainer:hover {
+  transform: scale(1);
+}
+
+.cardContent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.cardContainer:hover .cardContent {
+  opacity: 1;
+  transform: translateY(0); 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}

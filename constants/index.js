@@ -11,7 +11,7 @@ const SeniorcouncilMembers = [
         position: "Vice President" , 
         insta: "https://www.instagram.com/rishabhjain_33/", 
         linkedin: "https://www.linkedin.com/in/rishabh-jain-8166371b8/",
-        github: "https://github.com/" , 
+        github: "https://github.com/Rishabhjain33" , 
         info: "Final-year electronics engineering student at DTU. His  theoretical knowledge and practical skills  has helped the team in designing, analyzing, and implementing electrical systems. Throughout the journey, He has actively participated in projects and competitions, honing our problem-solving abilities and fostering a collaborative mindset."
     },
     { 
@@ -42,19 +42,19 @@ const SeniorcouncilMembers = [
 
 const JuniorcouncilMembers = [
     { 
-        name: "Devansh Wassista", 
-        position: "Joint Secretary" , 
-        insta: "https://www.instagram.com/", 
-        linkedin: "https://www.linkedin.com/in/devansh-wassista-a2a0a422b",
-        github: "https://github.com/Devansh121" , 
-        info: ""
-    },
-    { 
         name: "Harsh Pandey", 
         position: "General Secretary" , 
         insta: "https://www.instagram.com/harshpandey_21/", 
         linkedin: "https://www.linkedin.com/in/harsh-pandey-47456522b/",
         github: "https://github.com/" , 
+        info: ""
+    },
+    { 
+        name: "Devansh Wassista", 
+        position: "Joint Secretary" , 
+        insta: "https://www.instagram.com/", 
+        linkedin: "https://www.linkedin.com/in/devansh-wassista-a2a0a422b",
+        github: "https://github.com/Devansh121" , 
         info: ""
     },
     { 
@@ -70,7 +70,7 @@ const JuniorcouncilMembers = [
         position: "Joint Treasurer", 
         insta: "https://www.instagram.com/kartik_kasana.11/", 
         linkedin: "linkedin.com/in/kartik-kasana-651407230" ,
-        github: "https://github.com/" , 
+        github: "https://github.com/KasanaKartik" , 
         info: ""
     },
     { 

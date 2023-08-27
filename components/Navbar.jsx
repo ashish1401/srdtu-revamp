@@ -25,7 +25,7 @@ const Navbar = () => {
                             <Image src="/images/Logo.png" width={100} height={100} alt="SR DTU logo" />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap hidden md:block ">SOCIETY OF ROBOTICS</span>
                         </a>
-                        <Li params="gallery" />
+                        <Li params="contact" />
                         <Li params="council" />
                     </ul>
                 </div>
