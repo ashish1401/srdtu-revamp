@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import { motion } from 'framer-motion'
 import Hero from '../components/home/Hero';
-import Enroll from '../components/Enroll';
+import Enroll from '../components/home/Enroll';
 import About from './about-us';
 import AboutCard from '../components/home/AboutCard';
 import Heading from '../components/Heading';
@@ -17,10 +17,10 @@ export default function Home() {
         <title>Home - SR DTU</title>
       </Head>
 
-      <div className='w-full bg-black'>
-        <Enroll />
+      <div className='w-full bg-black overflow-hidden'>
+        <Enroll className="" />
       </div>
-      
+
       <section className=' bg-black'>
         <Heading heading="About Us" />
         <div className='grid  p-4 md:flex md:flex-wrap lg:grid lg:grid-cols-3 md:gap-4 gap-y-10'>

@@ -2,7 +2,7 @@ import { Suspense, useState, useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, meshBounds, useGLTF } from '@react-three/drei'
 
-import CanvasLoader from '../Loader/CanvasLoader'
+import CanvasLoader from './Loader/CanvasLoader'
 
 const Drone = ({ isMobile }) => {
     const drone = useGLTF('./buster_drone/scene.gltf');

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Bot from './Bot';
-import Hero from './home/Hero';
+import Hero from './Hero';
 import Image from 'next/image';
 
 const Enroll = () => {
@@ -36,13 +36,13 @@ const Enroll = () => {
         </div>
       </motion.section >
 
-      
-  
+
+
       <motion.div className='relative w-full'
-            animate={{ x: -50 }}
-            transition={{ ease: "easeIn", duration: 2 }}
-          >
-            <Hero />
+        animate={{ x: -50 }}
+        transition={{ ease: "easeIn", duration: 2 }}
+      >
+        <Hero />
       </motion.div>
     </div >
   )
