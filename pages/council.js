@@ -52,9 +52,9 @@ const Council = () => {
                         <div className="">
                             <div className={styles.container}>
                                 {/* cards - senior council */}
-                                <div className={`grid grid-cols-1 bg-opacity-5 md:grid-cols-2 lg:grid-cols-3 gap-20 pl-[10px] pr-[10px] justify-between`}>
+                                <div className={`grid grid-cols-1 bg-opacity-5  md:grid-cols-2 lg:grid-cols-3 gap-20 pl-[10px] pr-[10px] justify-between`}>
                                     {SeniorcouncilMembers.map((member, index) => (
-                                        <div class="relative w-[300px] rounded-xl shadow bg-gray-800 border-gray-700">
+                                        <div class="relative  shadow-secondary shadow-md w-[300px] rounded-xl  bg-gray-800 border-gray-700">
                                             {/* Profile image */}
                                             <img src={`images/Council/SeniorCouncilMember${index + 1}.jpg`} alt="Profile" className={`w-[300px] h-[300px] rounded-t-xl`} />
                                             {/* Info */}
