@@ -18,22 +18,18 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setloading(true);
-    
-    // public_key = 
-    // template_id = 
-    // service_id = 
 
     emailjs.send(
-      'service_kq70697',
-      'template_rpnzssk',
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
       {
         from_name: form.name,
         to_name: 'SR-DTU',
         from_email: form.email,
-        to_email: 'srdtu@mail.com',
+        to_email: 'info.srdtu@gmail.com',
         message: form.message
       },
-      't6OF0VOA9-wrjVQdx'
+      process.env.NEXT_PUBLIC_KEY
     )
     .then(()=>{
       setloading(false);
@@ -51,9 +47,12 @@ const ContactUs = () => {
   }
 
   return (
-    <div className='bg-stone-300 p-10 mt-20 flex xl:flex-row flex-col-reverse gap-10 justify-center'>
+    <div
+      className='bg-center p-10 mt-20 grid grid-cols-2 flex-row gap-10 justify-center'
+      style={{ backgroundImage: "url('/bg/ContactUs.png')", backgroundSize: '100% 100%', gridTemplateColumns: '1.5fr 1fr' }}
+    >
       <motion.div
-        className='flex-[0.65] bg-[#1c1734] p-8 rounded-2xl'
+        className='flex-[0.75] w-[100%] bg-[#1c1734] p-8 rounded-2xl'
       >
         <div className='relative flex justify-center'>
           <h3 className={` font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-300 via-blue-500 to-white inline-block text-transparent bg-clip-text`}>CONTACT US</h3>
@@ -92,6 +91,8 @@ const ContactUs = () => {
           </button>
         </form>
       </motion.div>
+      
+
     </div>
   )
 }
