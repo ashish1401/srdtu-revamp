@@ -51,9 +51,9 @@ const ContactUs = () => {
   }
 
   return (
-    <div className='p-2 md:p-10 md:mt-20 bg-gradient-to-br from-secondary to-primary flex xl:flex-row flex-col-reverse justify-center'>
+    <div className='p-2 md:p-10 md:mt-20 bg-des-1 bg-cover bg-bottom bg-gradient-to-br from-secondary to-primary flex xl:flex-row flex-col-reverse justify-center'>
       <motion.div
-        className='md:w-2/4 border-2 border-black shadow-lg shadow-primary  bg-primary bg-opacity-50 p-8 rounded-2xl'
+        className='md:w-2/4 border-2  bg-gradient-to-br from-secondary to-primary  border-black shadow-lg shadow-primary  bg-primary bg-opacity-50 p-8 rounded-2xl'
       >
         <div className='relative flex justify-center'>
           <h3 className={` font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-300 via-blue-500 to-white inline-block text-transparent bg-clip-text`}>CONTACT US</h3>
@@ -67,26 +67,26 @@ const ContactUs = () => {
             <span className='text-white md:text-[24px] font-bold mb-2 md:mb-4'>Your Name</span>
             <input required type="text" name="name" value={form.name} onChange={handleChange}
               placeholder="What's your name?"
-              className='bg-[#151030] py-4 px-6 placeholder: text-white rounded-lg outline-none border-none font-medium'
+              className='bg-opacity-10 bg-white py-4 px-6 placeholder: text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
             <span className='text-white md:text-[24px] font-bold mb-2 md:mb-4'>Email</span>
             <input required type="email" name="email" value={form.email} onChange={handleChange}
               placeholder="What's your email?"
-              className='bg-[#151030] py-4 px-6 placeholder: text-white rounded-lg outline-none border-none font-medium'
+              className='bg-opacity-10 bg-white py-4 px-6 placeholder: text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
             <span className='text-white md:text-[24px] font-bold mb-2 md:mb-4'>Your Query</span>
             <textarea required rows="7" name="message" value={form.message} onChange={handleChange}
               placeholder="What would you like to ask?"
-              className='bg-[#151030] py-4 px-6 placeholder: text-white rounded-lg outline-none border-none font-medium'
+              className='bg-opacity-10 bg-white py-4 px-6 placeholder: text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <button
             type="submit"
-            className=' bg-[#413766ae] py-3 px-8 text-white outline-none w-fit font-bold shadow-md shadow-[#050816] rounded-xl'
+            className=' bg-white text-secondary font-extrabold py-3 px-8  outline-none w-fit shadow-md shadow-[#050816] rounded-xl'
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
