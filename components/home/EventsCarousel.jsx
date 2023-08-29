@@ -43,7 +43,7 @@ export default function App() {
                 modules={[Autoplay, Pagination]}
                 style={{}}
                 // onAutoplayTimeLeft={onAutoplayTimeLeft}
-                className="bg-blue-900 border-2 mySwiper rounded-xl w-[90%] md:w-[70%]  mx-auto  "
+                className="bg-stone-900 border-2 mySwiper rounded-xl w-[90%] md:w-[70%]  mx-auto"
 
             >
 
@@ -299,14 +299,6 @@ export default function App() {
                         </div>
                     </div>
                 </SwiperSlide>
-
-
-
-
-
-
-
-
 
             </Swiper>
         </>

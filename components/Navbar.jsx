@@ -21,8 +21,8 @@ const Navbar = () => {
                     <ul className='flex md:text-sm text-xs  md:p-0 mt-4 items-center font-medium  border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 '>
                         <Li params="" style={style} />
                         <Li params="events" />
-                        <a href="" className="flex items-center">
-                            <Image src="/images/Logo.png" width={100} height={100} alt="SR DTU logo" />
+                        <a href="" className="flex items-center gap-4">
+                            <Image src="/bg/SR.png" width={70} height={70} alt="SR DTU logo" />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap hidden md:block ">SOCIETY OF ROBOTICS</span>
                         </a>
                         <Li params="contact" />
