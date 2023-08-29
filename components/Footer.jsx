@@ -9,7 +9,7 @@ const Footer = () => {
                     <div class="w-full  sm:w-2/3 lg:w-3/12">
                         <div class="mb-10 w-full text-center">
                             <a href="#HOME" class="mb-6 inline-block max-w-[160px]">
-                                <img src="./images/Logo.png" alt="logo" class="max-w-full" />
+                                <img src="../images/Logo.png" alt="logo" class="max-w-full" />
                             </a>
                             <p class="text-body-color mb-7 text-base font-bold">
                                 Society of Robotics, <br />Delhi Technological University

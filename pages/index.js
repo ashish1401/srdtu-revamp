@@ -37,7 +37,7 @@ export default function Home() {
       </section>
       <section className=' pt-4' style={{ backgroundImage: "url('bg/9.png')", backgroundSize: '100% 100%' }}>
         <Heading heading="Past Events" />
-        <div className='lg:grid-cols-2 lg:grid bg-[url(/images/robot.svg)] bg-no-repeat bg-cover bg-left-bottom md:bg-contain md:bg-right-bottom' style={{ backgroundSize: "" }}>
+        <div className='lg:grid-cols-2 lg:grid  ' style={{ backgroundSize: "" }}>
           <div className='flex justify-center items-center h-[700px] md:h-[800px] opacity-90 '>
             <EventsCarousel className="" />
           </div>
