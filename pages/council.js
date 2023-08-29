@@ -50,23 +50,23 @@ const Council = () => {
                 <title>Council - SR DTU</title>
             </Head>
             {/* Buttons for navigation */}
-            <div className=" min-h-screen bg-gradient-to-t from-secondary to-black md:pt-10 font-sora flex flex-col justify-center items-center">
-                <div className='mx-auto  flex items-center flex-col'>
-                    <h1 className={`text-[32px] mt-[80px] mb-[20px] font-black bg-clip-text font-sora text-transparent lg:text-[72px] sm:text-[60px] xs:text-[50px] lg:leading-[98px] bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500`}>COUNCIL 2022-2023</h1>
-                    <div className="flex gap-4 md:gap-12 p-4 md:p-0 items-center font-sora">
-                        <button
-                            className={`text-white bg-gradient-to-t from-black to-blue-500 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 text-lg  md:text-xl shadow ${activeButton === 'senior' ? 'border-2 border-tertiary ' : 'border-stone-600'}`}
-                            onClick={() => handleButtonClick('senior')}
-                        >
-                            SENIOR COUNCIL
-                        </button>
-                        <button
-                            className={`text-white bg-gradient-to-t from-black to-blue-500 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 text-lg md:text-xl shadow ${activeButton === 'junior' ? 'border-2 border-tertiary' : 'border-stone-600'}`}
-                            onClick={() => handleButtonClick('junior')}
-                        >
-                            JUNIOR COUNCIL
-                        </button>
-                    </div>
+            <div className="min-h-screen bg-cover bg-top md:pt-10 font-sora flex flex-col justify-center items-center"
+                style={{ backgroundImage: "url('/bg/7.png')" }}
+            >
+                <h1 className={`text-[32px] mt-[80px] mb-[20px] font-black bg-clip-text font-sora text-transparent lg:text-[72px] sm:text-[60px] xs:text-[50px] lg:leading-[98px] bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500`}>COUNCIL 2022-2023</h1>
+                <div className="flex gap-12 p-4 md:p-0 items-center font-sora">
+                    <button
+                        className={`text-white bg-gradient-to-t from-black to-blue-500 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 text-lg  md:text-xl shadow ${activeButton === 'senior' ? 'border-2 border-tertiary ' : 'border-stone-600'}`}
+                        onClick={() => handleButtonClick('senior')}
+                    >
+                        SENIOR COUNCIL
+                    </button>
+                    <button
+                        className={`text-white bg-gradient-to-t from-black to-blue-500 border-2 font-semibold hover:font-normal rounded-full px-3 md:px-6 py-4 text-lg md:text-xl shadow ${activeButton === 'junior' ? 'border-2 border-tertiary' : 'border-stone-600'}`}
+                        onClick={() => handleButtonClick('junior')}
+                    >
+                        JUNIOR COUNCIL
+                    </button>
                 </div>
                 {/* Cards Content for members */}
                 <div className="mt-10  mb-20 ">
