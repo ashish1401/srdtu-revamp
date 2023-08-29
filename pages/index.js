@@ -17,11 +17,11 @@ export default function Home() {
         <title>Home - SR DTU</title>
       </Head>
 
-      <div className='w-full bg-black overflow-hidden'>
+      <div className='w-full bg-black drop-shadow-xl shadow-black overflow-hidden'>
         <Enroll className="" />
       </div>
 
-      <section style={{backgroundImage: "url('bg/6.png')" , backgroundSize: '100%'}}>
+      <section style={{ backgroundImage: "url('bg/6.png')", backgroundSize: '100%' }} className='bg-no-repeat bg-bottom bg-contain'>
         <Heading heading="About Us" />
         <div className='grid  p-4 md:flex md:flex-wrap lg:grid lg:grid-cols-3 md:gap-4 gap-y-10'>
           <div className=''>
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=' pt-4' style={{backgroundImage: "url('bg/9.png')" , backgroundSize: '100% 100%'}}>
+      <section className=' pt-4' style={{ backgroundImage: "url('bg/9.png')", backgroundSize: '100% 100%' }}>
         <Heading heading="Past Events" />
         <div className='lg:grid-cols-2 lg:grid bg-no-repeat bg-cover bg-left-bottom md:bg-contain md:bg-right-bottom' style={{ backgroundSize: "" }}>
           <div className='flex justify-center items-center h-[700px] md:h-[800px] opacity-90 '>
