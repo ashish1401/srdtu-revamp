@@ -8,6 +8,7 @@
 .gradient-2 {
   background: linear-gradient(black, black) padding-box, linear-gradient(to right, darkblue, #497fe2) border-box;
   border: 4px solid transparent;
+  border-radius: 10px;
 }
 
 .canvas-loader {

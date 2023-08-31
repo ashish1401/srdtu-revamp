@@ -9,7 +9,7 @@ const Footer = () => {
                     <div class="w-full  sm:w-2/3 lg:w-3/12">
                         <div class="mb-10 w-full text-center">
                             <a href="#HOME" class="mb-6 inline-block max-w-[160px]">
-                                <img src="../images/Logo.png" alt="logo" class="max-w-full" />
+                                <img src="/bg/SR.png" alt="logo" class="max-w-full" />
                             </a>
                             <p class="text-body-color mb-7 text-base font-bold">
                                 Society of Robotics, <br />Delhi Technological University
@@ -35,25 +35,25 @@ const Footer = () => {
                             <h4 class="text-dark mb-3 text-lg font-bold">Quick Links</h4>
                             <ul>
                                 <li>
-                                    <a href="#ABOUT"
+                                    <a href=""
                                         class="text-body-color mb-2 inline-block text-base leading-loose">
                                         About Us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#TEAM"
+                                    <a href=""
                                         class="text-body-color mb-2 inline-block text-base leading-loose">
                                         Team
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"
+                                    <a href=""
                                         class="text-body-color mb-2 inline-block text-base leading-loose">
                                         Donate
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#EVENTS"
+                                    <a href=""
                                         class="text-body-color mb-2 inline-block text-base leading-loose">
                                         Events
                                     </a>
