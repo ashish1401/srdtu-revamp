@@ -14,8 +14,8 @@ const Events = () => {
             <div className='bg-primary sm:mt-20 text-white font-sora'>
                 <Heading heading="Events" />
                 <div>
-                    <UpcomingEvents flex="def" />
-                    <UpcomingEvents flex="reverse" />
+                    <UpcomingEvents flex="flex flex-row" />
+                    <UpcomingEvents flex="flex flex-row-reverse" />
                 </div>
                 <h3 className='font-pop w-[90%] text-xl mx-auto  md:text-4xl  text-center  my-10 drop-shadow-sm'>Represented <br /> <span className='text-secondary font-extrabold'>Delhi Technological University</span> in</h3>
                 <div>
