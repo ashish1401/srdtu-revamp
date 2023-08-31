@@ -16,7 +16,7 @@ const PastEvents = (props) => {
     return (
         <div className='md:w-3/4 my-4 mx-auto w-[90%] rounded-lg gradient'>
             <div className=" text-white p-2 gradient-1  font-pop">
-                <div className={`overflow-hidden md:flex flex-row-${props.flex} rounded-lg`}>
+                <div className={`overflow-hidden flex flex-row-${props.flex} rounded-lg`}>
                     <Image
                         src="/images/events/Quidditch.jpeg"
                         alt="image"
