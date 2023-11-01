@@ -23,22 +23,22 @@ export default function Home() {
 
       <section style={{ backgroundImage: "url('bg/6.png')", backgroundSize: '100%' }}>
         <Heading heading="About Us" />
-        <div className='grid  p-4 md:flex md:flex-wrap lg:grid lg:grid-cols-3 md:gap-4 gap-y-10'>
+        <div className='p-4 md:flex h-auto md:flex-wrap lg:grid lg:grid-cols-3 md:gap-2 gap-y-10'>
           <div className=''>
-            <AboutCard heading="Community" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore." link="/images/home/Mission.svg" />
+            <AboutCard heading="Community" content="The community within the Society of Robotics (SR-DTU) at Delhi Technological University is a group of students and individuals who share a common interest in robotics and technology. They collaborate, network, and participate in events and activities to learn and grow in the field of robotics. This community is inclusive, supportive, and fosters a sense of camaraderie among its members" link="/images/home/Mission.svg" />
           </div>
           <div className=''>
-            <AboutCard heading="Principles" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/home/Mission.svg" />
+            <AboutCard heading="Principles" content="The Society of Robotics (SR-DTU) is guided by three fundamental principles: innovation, collaboration, and exploration. Innovation is at the heart of SR-DTU’s mission, driving members to think creatively and develop cutting-edge solutions in the field of robotics. Collaboration is encouraged, promoting teamwork and knowledge sharing among members. The spirit of exploration is ingrained in the society’s DNA, inspiring curiosity and a commitment to continually push the boundaries of knowledge in technology and robotics." link="/images/home/Mission.svg" />
           </div>
           <div className=''>
-            <AboutCard heading="Goals" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, provident? Non alias quis quos, omnis error in voluptate veritatis impedit saepe aliquam corrupti optio eaque tempora aspernatur dolorum cumque dolor necessitatibus dolore.  " link="/images/home/Mission.svg" />
+            <AboutCard heading="Goals" content="SR-DTU’s goals revolve around advancing knowledge, fostering community, promoting innovation, and skill development in the field of robotics, while also contributing to wider awareness and engagement with technology." link="/images/home/Mission.svg" />
           </div>
         </div>
       </section>
       <section className=' pt-4' style={{ backgroundImage: "url('bg/9.png')", backgroundSize: '100% 100%' }}>
         <Heading heading="Past Events" />
         <div className='lg:grid-cols-2 lg:grid  ' style={{ backgroundSize: "" }}>
-          <div className='flex justify-center items-center h-[700px] md:h-[800px] opacity-90 '>
+          <div className='flex justify-center items-center h-[800px] md:h-[900px] opacity-90 '>
             <EventsCarousel className="" />
           </div>
           <div>

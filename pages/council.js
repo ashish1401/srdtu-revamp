@@ -116,7 +116,7 @@ const Council = () => {
                                     {JuniorcouncilMembers.map((member, index) => (
                                         <div class="relative w-[300px] rounded-xl border-secondary shadow-secondary shadow-md bg-gray-800 ">
                                             {/* Profile image */}
-                                            <img src={`images/Council/JuniorCouncilMember${index + 1}.jpg`} alt="Profile" className={`w-[300px] h-[300px] rounded-t-xl`} />
+                                            <img src={`images/Council/JuniorCouncilMember${index + 1}.jpg`} alt="Profile" className={`w-[300px] h-[300px] rounded-t-xl object-cover `} />
                                             {/* Info */}
                                             <div class="p-3">
                                                 <h5 class="mb-2 text-3xl font-bold tracking-tight text-secondary">{member.name}</h5>

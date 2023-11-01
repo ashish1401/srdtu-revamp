@@ -121,14 +121,7 @@ const JuniorcouncilMembers = [
         github: "https://github.com/" , 
         info: "" 
     },
-    { 
-        name: "Vaibhav Sharma", 
-        position: "Design & Content Head", 
-        insta: "https://www.instagram.com/me_vaibhavsharma/", 
-        linkedin: "https://www.linkedin.com/" , 
-        github: "https://github.com/" ,
-        info: ""
-    },
+    
     { 
         name: "Pritthish", 
         position: "Logistics & Hospitality Head", 

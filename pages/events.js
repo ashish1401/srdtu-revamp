@@ -12,7 +12,7 @@ const Events = () => {
                 <title>Events - SR DTU</title>
             </Head>
             <div className='bg-primary sm:mt-20 text-white font-sora'>
-                <Heading heading="Events" />
+                <Heading heading="Upcoming Events" />
                 <div>
                     <UpcomingEvents flex="flex flex-row" />
                     <UpcomingEvents flex="flex flex-row-reverse" />
